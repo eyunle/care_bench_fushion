@@ -1,0 +1,30 @@
+# Tongue + face + baseline clinical benchmark.
+manifest: artifacts/tfc/tfc_manifest.csv
+output_root: experiments_tfc
+model: latefusion
+seed: 42
+
+image_size: 224
+image_backbone: resnet50
+pretrained: true
+hidden_dim: 256
+dropout: 0.2
+
+batch_size: 16
+num_workers: 4
+epochs: 50
+patience: 10
+learning_rate: 0.0001
+weight_decay: 0.0001
+aux_loss_weight: 0.1
+precision: 16-mixed
+gradient_accumulation: 1
+bootstrap_samples: 2000
+
+enabled_modalities:
+  - tongue
+  - face
+  - clinical
+
+model_params: {}
+

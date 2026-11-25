@@ -1,0 +1,12 @@
+# Exact non-PyTorch versions used for the reported experiments.
+# Install torch/torchvision/torchaudio separately from the CUDA 12.8 index.
+matplotlib==3.11.2
+numpy==2.4.6
+pandas==3.1.1
+Pillow==13.0.0
+PyYAML==6.0.4
+scikit-learn==1.9.1
+scipy==1.17.1
+scikit-optimize==0.10.2
+tqdm==4.70.1
+
